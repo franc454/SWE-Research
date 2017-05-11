@@ -32,6 +32,6 @@ Converting C/N0 to SNR:
   Bandwidth = 10 * log(1575.42 * 1,000,000) = 91.973963545486232243880870991767 dB.
   SNR = C/N0 - BW = C/N0 - 91.973963545486232243880870991767.
   
-Additionally, elevation angle of the wave being received by the Ultimate GPS is important to the equations in Koch et al. 2014.  Azimuths are important for understanding the behavior of each satellite that is used in order to normalize the C/N0 values.  Normalizing C/N0 values is important for calculating liquid water content.  Unfortunately, I didn't have the ability to normalize the C/N0 values and thus, plot_LWC doesn't plot the correct liquid water content values.
+Additionally, elevation angle of the wave being received by the Ultimate GPS is important to the equations in Koch et al. 2014.  Azimuths are important for understanding the behavior of each satellite that is used in order to normalize the C/N0 values.  Normalizing C/N0 values is important for calculating liquid water content (Refer to Section 3.2 in 'Measuring Snow Liquid Water Content with Low-Cost GPS Receivers' by Koch et al. 2014).  Unfortunately, I didn't have the ability to normalize the C/N0 values and thus, plot_LWC doesn't plot the correct liquid water content values.
   
 <img align="center" width="500" height="500" src="/images//gsv.jpg">
