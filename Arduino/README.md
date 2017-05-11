@@ -25,5 +25,5 @@ $GPRMC provides date, time and location.  This line might be better suited for l
 
 ## $GPGSV
 
-$GPGSV provides the elevation angle, azimuth and C/N0 values received by the Ultimate GPS from a given satellite.  At one time, the Ultimate GPS can be receiving data from a number of satellites.   
+$GPGSV provides the elevation angle, azimuth and C/N0 values received by the Ultimate GPS from a given satellite.  At one time, the Ultimate GPS can be receiving data from a number of satellites.  C/N0 values are later converted to SNR values in the plot_LWC.py file.  C/N0 is given in dB-Hz and the equations used in 
 <img align="center" width="500" height="500" src="/images//gsv.jpg">
