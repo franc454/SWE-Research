@@ -32,40 +32,7 @@ logger.startLogging();  // Wake up and initialize
 // READ SENSORS: EDIT THIS PART //
 //////////////////////////////////
 
-// Analog sensors: place all analog sensor commands between
-// startAnalog() and endAnalog().
-// If you have no analog sensors, you should comment out the 
-// startAnalog() and endAnalog() commands
-
-
-//Honeywell_HSC_analog(int pin, float Vsupply, vRef, float Pmin, float Pmax, int TransferFunction_number, int units)
-
-//TransferFunction: 1 = 10% to 90% of Vsupply (A in second to last digit of part number)
-//TransferFunction: 2 = 5% to 95% of Vsupply (B in second to last digit of part number)
-//TransferFunction: 3 = 5% to 85% of Vsupply (C in second to last digit of part number)
-//TransferFunction: 4 = 4% to 94% of Vsupply (F in second to last digit of part number)
-
-//Units: 0 = mbar
-//Units: 1 = bar
-//Units: 2 = Pa
-//Units: 3 = KPa
-//Units: 4 = MPa
-//Units: 5 = inH2O
-//Units: 6 = PSI
-
-//Example: logger.Honeywell_HSC_analog(A1, 5, 3.3, 0, 30, 1, 6);
-
 logger.UltimateGPS();
-
-
-//
-// INSERT DIGITAL SENSOR READING COMMANDS HERE!
-//
-
-// NOTE: THE BUFFER SIZE IS (CHECK ON THIS!!!!!!!!!!!!!!) 256 BYTES;
-// run "logger.bufferWrite" if you think you are approaching this limit.
-// Otherwise, the buffer will overflow and I'm not sure what will happen.
-
 
 // ****** DO NOT EDIT BELOW THIS LINE ****** 
 
