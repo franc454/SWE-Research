@@ -13,4 +13,4 @@ From 'Datasheet for the PA6H (MTK3339) GPS module' which can be found at https:/
 
 ![Alt text](/images//gga.jpg?raw=true "$GPGGA Datasheet")
 
-<img align="left" width="100" height="100" src="/images//gga.jpg">
+<img align="center" width="1000" height="1000" src="/images//gga.jpg">
