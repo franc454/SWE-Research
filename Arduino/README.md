@@ -11,4 +11,4 @@ From 'Datasheet for the PA6H (MTK3339) GPS module' which can be found at https:/
 
 ## $GPGGA
 
-<img align="center" width="500" height="500" src="/images//gga.jpg">
+<img align="right" width="500" height="500" src="/images//gga.jpg">
