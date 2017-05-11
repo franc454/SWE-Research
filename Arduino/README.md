@@ -10,3 +10,4 @@ The important information in the output for calculating the liquid water content
 From 'Datasheet for the PA6H (MTK3339) GPS module' which can be found at https://learn.adafruit.com/adafruit-ultimate-gps/downloads.
 
 $GPGGA
+![Alt text](/images//gga.jpg?raw=true "Optional Title")
