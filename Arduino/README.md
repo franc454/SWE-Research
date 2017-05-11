@@ -9,21 +9,21 @@ The Ultimate GPS provides a library of files to receive data.  Echo is a file th
 The important information in the output for calculating the liquid water content is located within the $GPGGA and $GPGSV lines.
 From 'Datasheet for the PA6H (MTK3339) GPS module' which can be found at https://learn.adafruit.com/adafruit-ultimate-gps/downloads.
 
-## $GPGGA
+### $GPGGA
 
 $GPGGA contains time which is important for determining varying liquid water content during a long period of time.  Additionally, GPS location is provided and can be used to determine the location of a satellite relative to the Ultimate GPS.  I used this line for time in the plot_LWC.py code but for actual field research, the $GPRMC line may be better suited because it also provides the date.
 
 <img align="center" width="500" height="500" src="/images//gga.jpg">
 
 
-## GPRMC
+### GPRMC
 
 $GPRMC provides date, time and location.  This line might be better suited for long data collection periods because it provides the date as well, which is not provided with $GPGGA.
 
 <img align="center" width="500" height="500" src="/images//rmc.jpg">
 
 
-## $GPGSV
+### $GPGSV
 
 $GPGSV provides the elevation angle, azimuth and C/N0 values received by the Ultimate GPS from a given satellite.  At one time, the Ultimate GPS can be receiving data from a number of satellites.  C/N0 values are later converted to SNR values in the plot_LWC.py file.  C/N0 is given in dB-Hz and the equations used in 'Measuring Snow Liquid Water Content with Low-Cost GPS Receivers' by Koch et al. 2014 calculate liquic water content with SNR, which has units of dB.  
 
