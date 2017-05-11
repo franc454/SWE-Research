@@ -6,7 +6,7 @@ The Ultimate GPS provides a library of files to receive data.  Echo is a file th
 
 ## *Reading data in .txt file*
 
-The important information in the output for calculating the liquid water content is located within the $GPGGA and $GPGSV lines.
+The important information in the output for calculating the liquid water content is located within the $GPGGA, $GPRMC and $GPGSV lines.
 From 'Datasheet for the PA6H (MTK3339) GPS module' which can be found at https://learn.adafruit.com/adafruit-ultimate-gps/downloads.
 
 ### $GPGGA
