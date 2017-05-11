@@ -37,7 +37,7 @@ f = open(name + '.txt')
 pdf = PdfPages(name + '_SWEplotted.pdf')
 
 #adjust this to change how large of a timestep of SWE vals is averaged.
-time_step = 1000 #[sec]
+time_step = 100 #[sec]
 
 text = f.readlines()
 
@@ -134,7 +134,7 @@ start = sat_data[0][0]
 sat_data_ave = []
 interval = 0
 count = 0
-total_count = 0
+total_count = 1
 time_ave = 0
 sihvola_ave = 0
 denoth_ave = 0
@@ -149,8 +149,8 @@ roth_ave = 0
 #and start a new interval.
 for i in sat_data:
 
-    if time_step > (interval + (i[0]-start)) and total_count != len(sat_data):
-        interval += (i[0]-start)
+    if time_step > (i[0]-start) and total_count != len(sat_data):
+        interval = (i[0]-start)
         count += 1
         time_ave += i[0]
         sihvola_ave += i[1]
@@ -199,7 +199,7 @@ plottable_time = []
 for x in time:
     time_plot = dt.datetime.strptime(x, '%H:%M:%S')
     plottable_time.append(time_plot)
-
+print(len(plottable_time))
 #plot data
 fig = plt.figure(figsize = (18,5))
 ax = plt.subplot(111)
