@@ -79,8 +79,7 @@ for line in text:
             #the C/N0 value from the GPS which is in dB-Hz to an SNR value in dB 
             #which is used in calculating the SWE. Reciever frequency = 1575.42MHz.  
             #Bandwidth = 10*log(1575.42*1,000,000) = 91.973963545486232243880870991767 dB.
-            #SNR = C/N0 - BW = C/N0 - 91.973963545486232243880870991767.  Also 
-            #C/N0 values are recorded as positive but they are negative.
+            #SNR = C/N0 - BW = C/N0 - 91.973963545486232243880870991767.
             sat_SNR.append([int((int(current_time[:2])*3600)+(int(current_time[2:4])*60)+\
                         (int(current_time[4:6]))), float((strength_above)-91.973963545486232243880870991767), \
                         float(float(check_line[7])-91.973963545486232243880870991767), snow_depth, float(check_line[5])])
