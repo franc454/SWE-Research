@@ -28,9 +28,10 @@ $GPRMC provides date, time and location.  This line might be better suited for l
 $GPGSV provides the elevation angle, azimuth and C/N0 values received by the Ultimate GPS from a given satellite.  At one time, the Ultimate GPS can be receiving data from a number of satellites.  C/N0 values are later converted to SNR values in the plot_LWC.py file.  C/N0 is given in dB-Hz and the equations used in 'Measuring Snow Liquid Water Content with Low-Cost GPS Receivers' by Koch et al. 2014 calculate liquic water content with SNR, which has units of dB.  
 
 Converting C/N0 to SNR:
-  Reciever frequency = 1575.42MHz.  
+
+  Ultimate GPS reciever frequency = 1575.42MHz.  
   Bandwidth = 10 * log(1575.42 * 1,000,000) = 91.973963545486232243880870991767 dB.
-  SNR = C/N0 - BW = C/N0 - 91.973963545486232243880870991767.
+  SNR = C/N0 - BW = C/N0 - 91.973963545486232243880870991767.  (Equations from http://www.insidegnss.com/auto/novdec10-Solutions.pdf)
   
 Additionally, elevation angle of the wave being received by the Ultimate GPS is important to the equations in Koch et al. 2014.  Azimuths are important for understanding the behavior of each satellite that is used in order to normalize the C/N0 values.  Normalizing C/N0 values is important for calculating liquid water content (Refer to Section 3.2 in 'Measuring Snow Liquid Water Content with Low-Cost GPS Receivers' by Koch et al. 2014).  Unfortunately, I didn't have the ability to normalize the C/N0 values and thus, plot_LWC doesn't plot the correct liquid water content values.
   
