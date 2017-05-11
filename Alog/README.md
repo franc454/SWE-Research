@@ -1,10 +1,1 @@
-Logger
-======
-
-"Logger" is the data logger library for the Arduino-based ALog (http://northernwidget.com/alog/) developed by Andy Wickert and Chad Sandell at Northern Widget LLC and the University of Minnesota.
-
-While it is developed to work specifically with the ALog, it will also work with a standard Arduino that is outfitted with a SD card and a DS3231 real-time clock.
-
-"Logger" is optimized to handle all of the basic file, system, and power management behind-the-scenes, and to reduce power consumption to minimal levels through the use of the sleep functions. It exposes sensor functions as single-line calls, and includes a template for the addition of new sensors.
-
-For questions related to the Logger library, please send a message to us at info@northernwidget.com.
+I attempted to create an example script (GPS_with_Alog) and edit the Logger.h and Logger.cpp in order to log data to the SD card of the Alog Bottlelogger.  Unfortunately, I was unable to finish in time and the files in this folder are unable to log the data from the Ultimate GPS.  I have named the instances for the Ultimate GPS as 'UltimateGPS' in both Logger.h and Logger.cpp.  I will have to study C/C++ and the Alog Bottlelogger more in order to complete this section of the independent study.
