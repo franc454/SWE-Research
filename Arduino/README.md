@@ -15,12 +15,15 @@ $GPGGA contains time which is important for determining varying liquid water con
 
 <img align="center" width="500" height="500" src="/images//gga.jpg">
 
+
 ## GPRMC
 
 $GPRMC provides date, time and location.  This line might be better suited for long data collection periods because it provides the date as well, which is not provided with $GPGGA.
 
 <img align="center" width="500" height="500" src="/images//rmc.jpg">
 
+
 ## $GPGSV
 
+$GPGSV provides the elevation angle, azimuth and C/N0 values received by the Ultimate GPS from a given satellite.  At one time, the Ultimate GPS can be receiving data from a number of satellites.   
 <img align="center" width="500" height="500" src="/images//gsv.jpg">
