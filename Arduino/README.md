@@ -11,9 +11,15 @@ From 'Datasheet for the PA6H (MTK3339) GPS module' which can be found at https:/
 
 ## $GPGGA
 
+$GPGGA contains time which is important for determining varying liquid water content during a long period of time.  Additionally, GPS location is provided and can be used to determine the location of a satellite relative to the Ultimate GPS.  I used this line for time in the plot_LWC.py code but for actual field research, the $GPRMC line may be better suited because it also provides the date.
+
 <img align="center" width="500" height="500" src="/images//gga.jpg">
 
-$GPGGA contains time and date which is important for determining varying liquid water content during a long period of time.  Additionally, lo
+## GPRMC
+
+$GPRMC provides date, time and location.  This line might be better suited for long data collection periods because it provides the date as well, which is not provided with $GPGGA.
+
+<img align="center" width="500" height="500" src="/images//rmc.jpg">
 
 ## $GPGSV
 
